@@ -12,10 +12,12 @@ body {
 }
 
 .calculator-grid {
+    margin-top: 50px;
+    min-height: 100px;
+    max-height: 100px;
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
@@ -49,6 +51,8 @@ body {
     margin-bottom: 20px;
     word-wrap: break-word;
     word-break: break-all;
+    max-height: 200px;
+    position: relative;
 }
 
 .output .prev-operand {
@@ -62,5 +66,4 @@ body {
     color: white;
     font-size: 2.5rem;
     flood-color: white;
-
 }
